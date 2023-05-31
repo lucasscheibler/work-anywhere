@@ -1,83 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pesquisa</title>
+    <title>Home Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("path/to/image.jpg");
+            background-image: url("assets/office.jpg");
+            background-color: rgba(0, 0, 0, 0.5);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-        }
-        
-        #search-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            justify-content: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-        }
-        
-        #search-form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        #search-input {
-            padding: 10px;
-            width: 400px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 2px;
-            margin-bottom: 10px;
-        }
-        
-        #location-input {
-            padding: 10px;
-            width: 400px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 2px;
-            margin-bottom: 10px;
-        }
-        
-        #start-date-input,
-        #end-date-input {
-            padding: 10px;
-            width: 200px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 2px;
-            margin-bottom: 10px;
-        }
-        
-        #search-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 2px;
-            background-color: #ff5a5f;
-            color: #fff;
-            cursor: pointer;
-        }
-        
-        #search-button:hover {
-            background-color: #e64045;
+
         }
     </style>
 </head>
 <body>
     <div id="search-container">
         <form id="search-form">
-            <input type="text" id="search-input" name="search" placeholder="Digite sua pesquisa">
-            <input type="text" id="location-input" name="location" placeholder="Digite a localização">
+            <input type="text" id="search-input" name="search" placeholder="Search...">
+            <input type="text" id="location-input" name="location" placeholder="Country, City, or ZIP">
             <input type="date" id="start-date-input" name="start-date" placeholder="Data inicial">
             <input type="date" id="end-date-input" name="end-date" placeholder="Data final">
             <input type="submit" id="search-button" value="Pesquisar">
